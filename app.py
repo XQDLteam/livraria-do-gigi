@@ -5,7 +5,7 @@ from models import *
 app = Flask(__name__)
 CORS(app)
 @app.route('/', methods=['GET', 'POST']) #/login or /anything
-def index();
+def index():
     if request.method == 'GET':
         pass
     
@@ -18,7 +18,7 @@ def index();
         endereco = request.form.get('endereco')
         register(login, nome, email, senha, cpf, endereco)
         
-    return render_template('login.html');
+    return render_template('Livraria/login.html');
 
 if __name__ == '__main__':
     app.run(debug=True)

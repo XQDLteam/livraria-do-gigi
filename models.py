@@ -1,25 +1,12 @@
-from flask import Flask, render_template, request
-from flask_cors import CORS
-from models import *
+import sqlite3 as sql
+from os import path
 
-app = Flask(__name__)
-CORS(app)
-@app.route('/', methods=['GET', 'POST']) #/login or /anything
-def index();
-    if request.method == 'GET':
-        pass
-    
-    if request.method == 'POST': #modificar isso para o contexto da livraria
-        login = request.form.get('login')
-        nome = request.form.get('nome')
-        email = request.form.get('email')
-        senha = request.form.get('senha')
-        cpf = request.form.get('cpf')
-        endereco = request.form.get('endereco')
-        register(login, nome, email, senha, cpf, endereco)
-        
-    return render_template('index.html');
+ROOT = path.dirname(path.relpath((__file__)))
 
-if __name__ == '__main__':
-    app.run(debug=True)
-    
+#adicionar funcionalidades
+def register(login, nome, email, senha, cpf, endereco):
+    con = sql.connect(path.join(ROOT, 'livraria.db'))
+    cur = con.cursor()
+    cur.execute('insert into cliente (login, nome, email, senha, cpf, endereco) values (?, ?, ?, ?, ?, ?)', (login, nome, email, senha, cpf, endereco))
+    con.commit()
+    con.close()
