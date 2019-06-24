@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS autoria(
 CREATE TABLE IF NOT EXISTS livro(
   idLivro integer PRIMARY KEY autoincrement, 
   isbn integer NOT NULL, 
-  titulo text NOT NULL, 
+  titulo text NOT NULL UNIQUE, 
   precoVenda real NOT NULL, 
   formato text NOT NULL, 
   idEditora integer, 
