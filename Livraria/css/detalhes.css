@@ -1,0 +1,174 @@
+#supercontainer{
+	padding: 0;
+}
+/* NAVEGAÇÃO BREADCRUMB*/
+#breadcrumb-container{
+	margin: 10px 0;
+	font-size: 13px;
+}
+.breadcrumb{
+	background: transparent;
+	color: var(--destaque);
+}
+#livro-info{
+	justify-content: center;
+}
+
+/** IDENTIFICAÇÃO DO LIVRO */
+#livro-titulo{
+	font-size: 22px;
+	margin: 5px 0;
+	min-height: 10px;
+	color: #383838;
+}
+#autor-editora{
+	font-size: 16px;
+	margin: 5px 0;
+	min-height: 20px;
+	color: #666;
+}
+
+/** BOTÃO ADD À LISTA DE DESEJOS **/
+#desejos-add{
+	font-size: 20px;
+	margin-left: 5px;
+	padding: 10px 0;
+	color: #BBB;
+	background-color: none;
+	cursor: pointer;
+	border: none;
+}
+#desejos-add:hover{
+	transform: scale(1.1);
+}
+#desejos-add.add{
+	color: #FF4C4C;
+}
+
+/** FOTOS DO LIVRO **/
+#foto-destaque{
+	min-height: 400px;
+	width: 100%;
+}
+#mais-fotos{
+	margin: 5px 0;
+	padding: 5px 0;
+	min-height: 50px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid #E2E2E2;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.foto-extra{
+	height: 50px;
+	cursor: pointer;
+}
+
+/** QUATIDADE DE PRODUTOS E CALCULAR FRETE **/
+#num-frete-calc-container{
+	border-top:1px solid #E2E2E2;
+	margin: 10px 0;
+	min-height: 100px;
+	padding: 30px 0;
+}
+#num, #frete-calc{
+	padding: 20px 0;
+	height: 100px;
+}
+#quantidade-labe, #cep-label{
+	width: 100%;
+	padding: 0;
+}
+#quantidade{
+	border: 1px solid #CECECE;
+	text-align: center;
+}
+#cep{
+	height: 28px;
+	font-size: 14px;
+	border: 1px solid #CECECE;
+}
+#submit-cep-btn{
+	text-align: center;
+	height: 28px;
+	padding: 0;
+	font-size: 14px;
+	cursor: pointer;
+	color: #383838;
+	border: 1px solid #383838;
+	border-radius: 2px;
+}
+
+/* STOCK, RETURN/REFUND, PAYMENT, PRICE */
+#compra-info{
+	border-top:1px solid #E2E2E2;
+	border-bottom: 1px solid #E2E2E2;
+	padding: 15px 0;
+}
+#estoque{
+	color: var(--destaque);
+	font-size: 14px;
+	text-align: center;
+	padding: 10px 0;
+}
+#cancelamento-info, #pagamento-info{
+	color: #383838;
+	font-size: 14px;
+	padding: 10px 0;
+	text-decoration: none;
+	text-align: center;
+}
+#cancelamento-info:hover, #pagamento-info:hover{
+	text-decoration: underline;
+}
+#preço-titulo{
+	font-size: 15px;
+	color: #383838;
+}
+#preço-livro{
+	color: var(--destaque);
+	font-size: 26px;
+	margin-top: -10px;
+	text-align: center;
+}
+
+/** ADD AO CARRINHO **/
+#add-carrinho{
+	text-align: center;
+	margin-top: 20px;
+	color: #FFF;
+	background-color: var(--destaque);
+	border: 1px solid #FFF;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#add-carrinho:hover{
+	transform: scale(1.03);
+	-webkit-transform: scale(1.03);
+	-moz-transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	-o-transform: scale(1.03);
+}
+
+/** DETALHES LIVRO **/
+#livro-desc, #prod-info{
+	padding-bottom: 20px;
+}
+.card-body, .table{
+	font-size: 15px;
+}
+.btn-link{
+	text-decoration: none;
+	color: #383838;
+}
+.btn-link:hover{
+	text-decoration: none;
+	color: var(--destaque);
+}

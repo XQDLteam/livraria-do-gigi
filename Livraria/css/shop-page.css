@@ -1,0 +1,127 @@
+/* FILTERS */
+.filtros-container{
+	font-size: 15px;
+	padding: 20px;
+	color: #383838;
+}
+.filtro{
+	margin: 30px 0;
+	padding: 0 15px;
+}
+.filtro-titulo{
+	color: var(--destaque);
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+.filtro-opção{
+	margin: 15px 0;
+}
+/** INFORMAÇÕES GERAIS DA PÁGINA **/
+.breadcrumb{
+	background: transparent;
+	color: var(--destaque);
+	font-size: 13px;
+	margin: 10px 0;
+	border-bottom: 1px solid #E2E2E2;
+}
+#pesquisa-ordem-container{
+	margin: 15px 0;
+}
+#ordem{
+	text-align: right;
+	font-size: 14px;
+}
+/** Livros Página**/
+.livro-container{
+	height: 312px;
+    width: 210px;
+	margin: 10px 0;
+    text-decoration: none;
+    color: #383838;
+	text-align: center;
+}
+.livro-container a:hover{
+    text-decoration: none;
+    color: #383838;
+}
+.livro-img{
+    width: 180px;
+    height: 210px;
+}
+.info-livro{
+    width: 180px;
+    border: 0.5px solid #ddd;
+}
+.descrição-livro{
+	height: 55px;
+	line-height: 18px;
+}
+.titulo-livro{
+    font-size: 15px;
+    color: #383838;
+    padding: 0 10px;
+}
+.autor{
+    font-size: 12px;
+    color: #666;
+    padding: 0 10px;
+}
+.preço-car{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center; 
+}
+.preço{
+    width: 110px;
+    height: 45px;
+    padding: 5px;
+    line-height: 7px;
+    border-style: none none solid solid;
+    border-color: #DDD;
+    border-width: 1px;
+}
+.preço-titulo{
+    color: var(--destaque);
+    font-size: 14px;
+    text-align: left;
+    padding-left: 5px;
+}
+.preço-num{
+    font-size: 17px;
+    color: #383838;
+}
+.add-carrinho{
+    height: 45px;
+    width: 70px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--destaque);
+    padding: 13px 0;
+    border-style: none solid solid solid;
+    border-color: #DDD;
+    border-width: 1px;
+    cursor: pointer;
+}
+.add-carrinho:hover{
+    color: #FFF;
+    background: var(--destaque);
+    border-color: var(--destaque);
+}
+
+/** PÁGINAS N°**/
+.paginas{
+	margin-top: 40px;
+	padding: 30px;
+	border-top: 1px solid #E2E2E2;
+}
+.pagina-num{
+	border: 1px solid #E2E2E2;
+	padding: 5px 14px;
+	margin: 0px 3px;
+	cursor: pointer;
+	color: #383838;
+}
+.pagina-num:hover{
+	color: #FFF;
+	background: #383838;
+}

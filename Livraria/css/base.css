@@ -1,0 +1,203 @@
+a:focus {outline: none;}
+
+/**  FONTE **/
+body{
+	font-family: 'Poppins', sans-serif;
+}
+/** CORES **/
+:root{
+	--topNbottomBG: #383838;
+	--topNbottomTXT: #E2E2E2;
+	--destaque: #00BFFF;
+}
+
+/** CABEÇALHO **/
+.supercontainer{padding: 0;}
+
+.topheader{
+	color: var(--topNbottomTXT);
+	background-color: var(--topNbottomBG);
+	width: 100%;
+	min-height: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/**TEL, EMAIL E SOCIAL MEDIA**/
+.info-contato ul, .compartilhar ul{
+	padding: 3px 20px;
+	margin: 0;
+}
+.info-contato li, .compartilhar li{
+	list-style-type: none;
+	display: inline;
+	color: var(--topNbottomTXT);
+	font-size: 13px;
+}
+.compartilhar ul{text-align: right;}
+
+.compartilhar button{
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+.compartilhar-icone, .compartilhar-icone:hover{
+	text-decoration: none;
+	color: var(--topNbottomTXT);
+}
+.facebook:hover{background-color: #4A65A0;}
+.twitter:hover{background-color: #1DA1F2;}
+.linkedin:hover{background-color: #0077B5;}
+.pinterest:hover{background-color: #E60023;}
+
+@media (max-width: 575px){
+	.info-contato ul, .compartilhar ul{
+		text-align: center;
+	}
+}
+/**LOGO**/
+.logo{
+	width: 100%;
+	min-height: 90px;
+	margin-left: 0px;
+	font-size: 40px;
+	font-weight: 700;
+	/*background-image: url("../images/bannerbooks.png");
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	color: #FFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	letter-spacing: 2px;
+	text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+/** BARRA DE NAVEGAÇÃO**/
+.navbar{
+	min-height: 55px;
+	padding: 0;
+	background: transparent;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+.navbar button{
+	background: transparent;
+}
+.navbar button:hover{
+	color: var(--destaque);
+}
+.nav-link{
+	margin: 0;
+	padding: 0;
+}
+#carrinho-btn, #usuario-btn{
+	font-size: 15px;
+	height: 40px;
+	width: 40px;
+	background: transparent;
+	border-radius: 50%;
+	border: 0.5px solid #CCC;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.barra-pesquisa{
+	width: 100%;
+	border: 1px solid #CECECE;
+	font-size: 14px;
+}
+.form-rounded {
+	border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	-ms-border-radius: 1em;
+	-o-border-radius: 1em;
+}
+.pesquisar-btn{
+	border: none;
+	width: 40px;
+	height: 24px;
+	margin-left: -35px;
+	color: #383838;
+	background: none;
+	position: absolute;
+	cursor: pointer;
+}
+.pesquisar-btn:hover{ 
+	transform: scale(1.2); 
+	-webkit-transform: scale(1.2); 
+	-moz-transform: scale(1.2); 
+	-ms-transform: scale(1.2); 
+	-o-transform: scale(1.2);
+}
+
+.login-titulo, .registro-titulo{
+	margin-bottom: 20px;
+	color: #38B6FF;
+	font-size: 20px;
+}
+.registro-form{border-left: 1px solid #E2E2E2;}
+
+/** RODAPÉ **/
+footer{
+	padding: 0;
+	margin: 0;
+}
+.links{
+	justify-content: center;
+	min-height: 170px;
+	line-height: 22px;
+	padding-top: 20px;
+}
+.footer-link{
+	color: var(--topNbottomTXT);
+	text-decoration: none;
+}
+.footer-link:hover{
+	color: var(--topNbottomTXT);
+}
+.footer-info{
+	background-color: var(--topNbottomBG);
+	color: var(--topNbottomTXT);
+	margin: 0;
+	padding: 0px;
+	font-size: 13px;
+}
+.info-geral, .segurança-privacidade{
+	width: 200px;
+	padding: 0;
+	list-style-type: none;
+	letter-spacing: 0.5px;
+}
+.newsletter{
+	padding: 20px 10px;
+	min-height: 100px;
+}
+#Titulo-newsletter{
+	letter-spacing: 0.5px;
+	font-weight: 700;
+	padding: 0;
+}
+.newsletter-email{
+	min-width: 250px;
+	height: 30px;
+	border: 1px solid #383838;
+	border-radius: 2px;
+}
+#newsletter-btn{
+	color: #383838;
+	border: 1px solid #383838;
+	background-color: lightGray;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 3px;
+}
