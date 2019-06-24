@@ -1,0 +1,14 @@
+#cadastrar{
+    background: #FFF;
+    color: #383838;
+    text-decoration: none;
+}
+#login{
+    background: #E2E2E2;
+    color: #959595;
+    text-decoration: none;
+}
+#login:hover{
+    background: #D2D2D2;
+    color: #9D9D9D;
+}

@@ -1,7 +1,8 @@
 /** BANNER CARROSSEL **/
 #banner-container{
 	background-color: transparent;
-	height: 410px;
+    height: 410px;
+    width: 100%;
 	padding: 0;
 }
 .banner{
@@ -15,20 +16,20 @@
 
 
 /** LIVROS CARROSSEL **/
-.carrossel-livros-container{
+.mostruario-livros-container{
     margin: 50px 0;
 }
-.carrossel-titulo{
+.mostruario-titulo{
     text-align: center;
     letter-spacing: 0.5px;
     font-size: 16px;
     font-weight: 700;
     color: var(--destaque);
     padding: 0 50px;
-   border-bottom: 2px solid #DDD;
+   border-bottom: 2px solid var(--linha);
 }
 .livro-container{
-	height: 315px;
+    height: 310px;
     width: 180px;
     margin: 0 20px;
     text-decoration: none;
@@ -45,7 +46,7 @@
 }
 .info-livro{
     width: 180px;
-    border: 0.5px solid #ddd;
+    border: 0.5px solid var(--linha);
 }
 .descrição-livro{
     height: 55px;
@@ -62,19 +63,13 @@
     padding: 0 10px;
     
 }
-.preço-car{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    
-}
 .preço{
     width: 110px;
     height: 45px;
     padding: 5px;
     line-height: 7px;
     border-style: none none solid solid;
-    border-color: #DDD;
+    border-color: var(--linha);
     border-width: 1px;
 }
 .preço-titulo{
@@ -95,7 +90,7 @@
     color: var(--destaque);
     padding: 13px 0;
     border-style: none solid solid solid;
-    border-color: #DDD;
+    border-color: var(--linha);
     border-width: 1px;
     cursor: pointer;
 }
@@ -103,11 +98,4 @@
     color: #FFF;
     background: var(--destaque);
     border-color: var(--destaque);
-}
-.carrossel-livros-container .carousel-control-prev, .carrossel-livros-container .carousel-control-next{
-    width: 32px;
-    font-size: 30px;
-    color: #BBB;
-    position: absolute;
-    margin: 0 -30px;
 }

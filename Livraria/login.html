@@ -9,11 +9,11 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Poppins&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/detalhes.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
-	<div class="supercontainer col-12">
+	<div class="supercontainer">
 		<header>
 			<div class="topheader centralizar-around">
 				<div class="info-contato col-12 col-sm-6 col-md-8">
@@ -123,162 +123,25 @@
 			</div>
 		</header>
 
-		<div id="supercontainer" class="col-12 centralizar-h">
-			<nav id="breadcrumb-container" class="col-12">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-					<li class="breadcrumb-item"><a href="./shop-page.html">Categoria</a></li>
-					<li class="breadcrumb-item active">Livro</li>
-				</ol>
-			</nav>
-
-			<div id="prod-info" class="col-12 centralizar">
-				<div id="livro-imagens" class="col-12 col-sm-6 col-md-5 col-lg-3">
-					<div id="foto-destaque-container">
-					    <img id="foto-destaque" src="https://images-na.ssl-images-amazon.com/images/I/51CDlkHVkaL._SX354_BO1,204,203,200_.jpg" alt="foto">
-					</div>
-
-					<div id="mais-fotos" class="centralizar-around">
-						<img class="foto-extra" src="https://images-na.ssl-images-amazon.com/images/I/51CDlkHVkaL._SX354_BO1,204,203,200_.jpg" alt="foto">
-						<img class="foto-extra" src="https://images-na.ssl-images-amazon.com/images/I/71QOcLNlJJL.jpg" alt="foto">
-						<img class="foto-extra" src="https://www.extra-imagens.com.br/livros/LivrodeLiteraturaEstrangeira/FiccaoCientifica/205942/243439392/Livro-%E2%80%93-O-Senhor-dos-Aneis-%E2%80%93-Edicao-Completa-J-R-R-Tolkien-205942.jpg" alt="foto">
-						<img class="foto-extra" src="https://www.extra-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=93678720" alt="foto">
-					</div>
+        <div id="main" class="col-12 centralizar">
+            <div id="forms-container" class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 centralizar">
+				<div id="forms-btn" class="centralizar-h col-12">
+					<a href="./login.html" id="login" class="btn col-6">Login</a>
+					<a href="./cadastro.html" id="cadastrar" class="btn col-6">Cadastro</a>
 				</div>
-
-				<div id="livro-shop" class="col-12 col-lg-8">
-					
-					<div id="livro-identificação" class="col-12">
-						<div id="livro-titulo">O Senhor Dos Anéis - Trilogia - Volume Único</div>
-						<div id="autor-editora">Tolkien, J. R. R. - Martins Editora </div>
-						<button id="desejos-add" class="fas fa-heart"></button>
-					</div>
-					
-					<div id="num-frete-calc-container" class="col-12 centralizar-h">
-						<div id="num" class="col-8 col-sm-4 col-md-3">
-							<label for="quantidade" id="quantidade-label">Quantidade</label></br>
-							<input id="quantidade" class="col-12 col-sm-7" nome="quantidade" type="number" value="1" min="1" max="100" step="1"/>
-						</div>
-						<div id="frete-calc" class="col-9 col-sm-5 col-md-7 col-lg-6 centralizar-h">
-							<label for="CEP" id="cep-label">CEP</label></br>
-							<input id="cep" class="col-md-6" name="cep" type="text" name="cep"/>
-							<button id="submit-cep-btn" type="submit" class="col-md-6 btn btn-sm"><i class="fas fa-truck"></i> Calcular Frete</button>
-						</div>
-					</div>
-
-					<div id="compra-info" class="col-12 centralizar">
-						<div id="estoque" class="col-md-3 centralizar"> EM ESTOQUE </div>
-						<div id="financeiro-info" class="col-md-7 centralizar">
-							<a id="cancelamento-info" href="#" class="col-12 col-md-6"><i class="fas fa-undo-alt"></i> Devolução / Troca </a>
-							<a id="pagamento-info" href="#" class="col-12 col-md-6"><i class="fas fa-credit-card"></i> Métodos de pagamento</a>
-						</div>
-						<div class="col-12 col-sm-4 col-md-2">
-							<label id="preço-titulo" for="preço-livro"> Preço: </label>
-							<div id="preço-livro" name="preço-livro"> $150.00 </div>
-						</div>
-					</div>
-
-					<div id="add-carrinho-container" class="col-12 centralizar">
-						<button type="submit" id="add-carrinho" class="btn btn-small col-sm-8 col-md-6">
-							<i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="accordion col-sm-10 col-12 col-lg-11" id="livro-desc">
-				<div class="card">
-				    <div class="card-header" id="description">
-				    	<h5 class="mb-0">
-				       		<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#sinopse" aria-expanded="true" aria-controls="sinopse">Sinopse</button>
-				      	</h5>
-				    </div>
-
-				    <div id="sinopse" class="collapse show" data-parent="#livro-desc">
-				    	<div class="card-body">
-							A história narra o conflito contra o mal que se alastra pela Terra-média, através da luta de várias raças - 
-							Humanos, Anões, Elfos, Ents e Hobbits - contra Orcs, para evitar que o "Anel do Poder" volte às mãos de seu criador Sauron, o Senhor do Escuro. 
-							Partindo dos primórdios tranquilos do Condado, a história muda através da Terra-média e segue o curso da Guerra do Anel através dos olhos de seus personagens, especialmente do protagonista, Frodo Bolseiro.
-				    	</div>
-				    </div>
-				</div>
-
-				<div class="card">
-				    <div class="card-header" id="livro-espec">
-				    	<h5 class="mb-0">
-				        	<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#especs" aria-expanded="false" aria-controls="especs">Especificações</button>
-				    	</h5>
-				    </div>
-				    <div id="especs" class="collapse" data-parent="#livro-desc">
-				    	<div class="card-body">
-				        	<table class="table table-striped">
-								<tbody>
-									<tr>
-										<td>Título</td>
-										<td>O Senhor dos Anéis</td>
-									</tr>
-									<tr>
-										<td>Título Original</td>
-										<td>The Lord of The Rings</td>
-									</tr>
-									<tr>
-										<td>Autor</td>
-										<td>J. R. R. Tolkien</td>
-									</tr>
-									<tr>
-										<td>Data de Lançamento</td>
-										<td>2001</td>
-									</tr>
-								    <tr>
-									    <td>Idioma</td>
-									    <td>Português</td>
-								    </tr>
-								    <tr>
-									   <td>Número da edição</td>
-									    <td>1</td>
-								    </tr>
-								    <tr>
-									    <td>Número de páginas</td>
-									    <td>1234</td>
-									</tr>
-									<tr>
-										<td>Acabamento</td>
-										<td>Brochura</td>
-									</tr>
-								    <tr>
-									    <td>Editora</td>
-									    <td>Martins Fontes - Selo Martins </td>
-								    </tr>
-								    <tr>
-									    <td>País de Origem</td>
-									    <td>Brasil</td>
-								    </tr>
-								    <tr>
-									    <td>I.S.B.N.</td>
-									    <td>8533613407</td>
-								    </tr>
-								</tbody>
-							</table>
-				    	</div>
-				    </div>
-				</div>
-
-				<div class="card">
-				    <div class="card-header" id="livro-dimensões">
-				    	<h5 class="mb-0">
-				        	<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#dimensões" aria-expanded="false" aria-controls="collapseThree">Dimensões</button>
-				    	</h5>
-				    </div>
-				    <div id="dimensões" class="collapse" aria-labelledby="dimesões" data-parent="#livro-desc">
-				    	<div class="card-body centralizar-v">
-							<div id="peso" class="medida col-12 col-md-2"> <i class="fas fa-weight-hanging"></i> Peso: 1.225 Kg </div>
-							<div id="altura" class="medida col-12 col-md-2"> <i class="fas fa-arrows-alt-v"></i> Altura: 14.00 cm </div>
-				        	<div id="largura" class="medida col-md-2"> <i class="fas fa-arrows-alt-h"></i> Largura: 22.00 cm </div>
-				    	</div>
-				    </div>
-				</div>
-			</div>
-		</div>
+                <div id="form-wraper">
+                    <form action="#" method="POST" class="centralizar-h">
+                        <div class="container centralizar-v">
+							<i class="fas fa-envelope col-1"></i><input id="email" class="login-input col-10" type="email" placeholder="Email" required>
+                        </div>
+                        <div class="container centralizar-v">
+							<i class="fas fa-key col-1"></i><input id="senha" class="login-input col-10" type="password" placeholder="Senha" required>
+                        </div>
+                        <button id="submit-btn" type="submit" class="btn btn-sm btn-block btn-info"> Entrar </button>
+                    </form>
+                </div>
+            </div>			
+        </div>
 
 		<footer>			
 			<div class="footer-info col-12 centralizar">
@@ -304,12 +167,11 @@
 			</div>
 		</footer>
 	</div>
-	
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	
-	<script src="js/detalhes.js"></script>
-	<script src="js/base.js"></script>
+    <script src="js/base.js"></script>
 </body>
 </html>

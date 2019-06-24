@@ -1,0 +1,62 @@
+#main{
+    min-height: 460px;
+}
+#forms-container{
+    min-height: 250px;
+    margin: 50px 0;
+    padding: 0;
+    background: #FFF;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(56,56,56,0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(56,56,56,0.5);
+    box-shadow: 0px 0px 5px 0px rgba(56,56,56,0.5);
+}
+#forms-btn{
+    padding: 0;
+    margin-bottom: 10px;
+}
+#form-wraper{
+    padding: 0 20px;
+    margin: 30px 0;
+}
+.container{ 
+    margin-bottom: 20px;
+    padding: 0;
+    border: 1px solid #CACACA;
+    color: #383838;
+    background: #FFF;
+}
+.login-input, .cadastro-input{
+    height: 35px;
+    border: none;
+    margin-left: 2px;
+    font-size: 14px;
+}		
+#login, #cadastrar{
+    font-size: 16px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+#cadastrar{
+    background: #E2E2E2;
+    color: #959595;
+    text-decoration: none;
+}
+#cadastrar:hover{
+    background: #d2d2d2;
+    color: #9d9d9d;
+}
+#login{
+    color: #383838;
+    text-decoration: none;
+    background: #FFF;
+}
+
+input:required {
+    box-shadow:none;
+}
+input:invalid {
+    box-shadow: none;
+}

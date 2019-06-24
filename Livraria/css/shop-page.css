@@ -1,4 +1,4 @@
-/* FILTERS */
+/* FILTROS */
 .filtros-container{
 	font-size: 15px;
 	padding: 20px;
@@ -18,11 +18,16 @@
 }
 /** INFORMAÇÕES GERAIS DA PÁGINA **/
 .breadcrumb{
-	background: transparent;
-	color: var(--destaque);
-	font-size: 13px;
-	margin: 10px 0;
-	border-bottom: 1px solid #E2E2E2;
+    background: transparent;
+    color: var(--destaque);
+    font-size: 13px;
+    margin: 10px 0;
+    border-bottom: 1px solid var(--linha);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 #pesquisa-ordem-container{
 	margin: 15px 0;
@@ -31,9 +36,9 @@
 	text-align: right;
 	font-size: 14px;
 }
-/** Livros Página**/
+/** LIVROS PÁGINA **/
 .livro-container{
-	height: 312px;
+	height: 310px;
     width: 210px;
 	margin: 10px 0;
     text-decoration: none;
@@ -50,7 +55,7 @@
 }
 .info-livro{
     width: 180px;
-    border: 0.5px solid #ddd;
+    border: 0.5px solid var(--linha);
 }
 .descrição-livro{
 	height: 55px;
@@ -66,18 +71,13 @@
     color: #666;
     padding: 0 10px;
 }
-.preço-car{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center; 
-}
 .preço{
     width: 110px;
     height: 45px;
     padding: 5px;
     line-height: 7px;
     border-style: none none solid solid;
-    border-color: #DDD;
+    border-color: var(--linha);
     border-width: 1px;
 }
 .preço-titulo{
@@ -98,7 +98,7 @@
     color: var(--destaque);
     padding: 13px 0;
     border-style: none solid solid solid;
-    border-color: #DDD;
+    border-color: var(--linha);
     border-width: 1px;
     cursor: pointer;
 }
@@ -108,18 +108,18 @@
     border-color: var(--destaque);
 }
 
-/** PÁGINAS N°**/
+/** PÁGINAS N° **/
 .paginas{
 	margin-top: 40px;
 	padding: 30px;
-	border-top: 1px solid #E2E2E2;
+    border-top: 1px solid var(--linha);
 }
 .pagina-num{
-	border: 1px solid #E2E2E2;
+	border: 1px solid var(--linha);
 	padding: 5px 14px;
 	margin: 0px 3px;
 	cursor: pointer;
-	color: #383838;
+    color: #383838;
 }
 .pagina-num:hover{
 	color: #FFF;
