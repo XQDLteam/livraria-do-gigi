@@ -1,7 +1,9 @@
 CREATE TABLE IF NOT EXISTS autor(
   idAutor integer PRIMARY KEY autoincrement, 
-  nomeAutor text NOT NULL, dataFalescimento text, 
-  localMorte text, localNascimento text NOT NULL, 
+  nomeAutor text NOT NULL,
+  dataFalescimento text, 
+  localMorte text, 
+  localNascimento text NOT NULL, 
   biografia text NOT NULL
 );
 
@@ -19,12 +21,13 @@ CREATE TABLE IF NOT EXISTS livro(
   titulo text NOT NULL, 
   precoVenda real NOT NULL, 
   formato text NOT NULL, 
-  idEditora integer NOT NULL, 
+  idEditora integer, 
   precoCusto real NOT NULL, 
   margemLucro real NOT NULL, 
   avaliacao real NOT NULL, 
   quantidadeEstoque integer NOT NULL, 
-  capa BLOB NOT NULL, 
+  capa BLOB,
+  sinopse text NOT NULL, 
   numeroPaginas integer NOT NULL,
   edicao integer NOT NULL,
   FOREIGN KEY (idEditora) REFERENCES editora(idEditora)
@@ -32,12 +35,14 @@ CREATE TABLE IF NOT EXISTS livro(
 
 CREATE TABLE IF NOT EXISTS editora(
   idEditora integer PRIMARY KEY autoincrement, 
-  nomeEditora text NOT NULL, cnpj text NOT NULL, 
-  endereco text NOT NULL, telefone integer NOT NULL
+  nomeEditora text NOT NULL,
+  cnpj text NOT NULL, 
+  endereco text NOT NULL,
+  telefone integer NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS compra(
-  idCompra integer PRIMARY autoincrement, 
+  idCompra integer PRIMARY KEY autoincrement, 
   precoTotal real CHECK(precoTotal > 0.0)
 );
 
@@ -85,7 +90,7 @@ CREATE TABLE IF NOT EXISTS pedidoEditora(
   valorNotaFiscal real NOT NULL, 
   estadoPedido text NOT NULL, 
   PRIMARY KEY (idCompra), 
-  FOREIGN KEY (idCompra) REFERENCES compra(idCompra), 
+  FOREIGN KEY (idCompra) REFERENCES compra(idCompra) 
 );  
 
 CREATE TABLE IF NOT EXISTS categoria(
