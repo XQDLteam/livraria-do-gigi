@@ -1,0 +1,9 @@
+isbn 9788577343348
+paginas 256
+edicao 1
+tipo-capa brochura
+editora casa da palavra
+categoria Literatura fantástica
+autor Solano, Affonso
+preco 34,90
+sinopse: Kurgala é um mundo abandonado por Quatro Deuses. Adapak é filho de um deles. E hoje ele está sendo caçado. Perseguido por um misterioso grupo de assassinos, o jovem de pele cor de carvão se vê obrigado a deixar a ilha sagrada onde cresceu e a desbravar um mundo hostil e repleto de criaturas exóticas. Munido de uma sabedoria ímpar, mas dotado de uma inocência rara, ele agora precisará colocar em prática todo o conhecimento que adquiriu em seu isolamento para descobrir quem são seus inimigos. Mesmo que isso possa comprometer alguns dos segredos mais antigos de Kurgala.
