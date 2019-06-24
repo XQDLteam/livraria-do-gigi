@@ -1,14 +1,10 @@
-isbn 9788551002490
-paginas 288
-edicao 1
-tipo-capa brochura
-editora Intrínseca
-autor 	Mark Manson
-categoria autoajuda
-preco 27,92
-sinopse: Vivemos em uma época interessante. Materialmente, nunca estivemos melhor - temos mais liberdade, mais saúde e mais riqueza do que em qualquer momento da história da humanidade. No entanto, tudo ao redor parece terrivelmente f*dido: aquecimento global, governantes horrorosos, economia em crise e todos constantemente ofendidos nas redes sociais. Temos acesso a tecnologia, educação e comunicação de maneiras que nossos ancestrais jamais sonhariam e, mesmo assim, sentimos essa desesperança esmagadora. O que está acontecendo, afinal?
-
-Se você também está se fazendo essa pergunta, o livro de Mark Manson é sua próxima leitura obrigatória. Em A sutil arte de ligar o f*da-se, Manson, de maneira brilhante, deu forma à ansiedade que permeia a vida moderna - agora, em F*deu geral, ele desvia seu olhar das falhas inevitáveis de cada indivíduo para as inúmeras calamidades que tomam o mundo. Ao trazer desde pesquisas psicológicas até pérolas da sabedoria atemporal de filósofos como Platão e Nietzsche (e Tom Waits), Manson disseca religião e política e trata de como as duas, desconfortavelmente, vieram a se assemelhar. Também explora nossa relação com o dinheiro, o entretenimento e a internet, e desafia de modo franco nossas definições de fé, felicidade, liberdade e, até mesmo, a própria definição de esperança.
-
-Um passeio inusitado e divertido pela dor em nossos corações e o estresse em nossas vidas.
+isbn;9788551002490
+paginas;288
+edicao;1
+tipo-capa;brochura
+editora;Intrínseca
+autor;Mark Manson
+categoria;autoajuda
+preco;27,92
+sinopse;Vivemos em uma época interessante. Materialmente, nunca estivemos melhor - temos mais liberdade, mais saúde e mais riqueza do que em qualquer momento da história da humanidade. No entanto, tudo ao redor parece terrivelmente f*dido: aquecimento global, governantes horrorosos, economia em crise e todos constantemente ofendidos nas redes sociais. Temos acesso a tecnologia, educação e comunicação de maneiras que nossos ancestrais jamais sonhariam e, mesmo assim, sentimos essa desesperança esmagadora. O que está acontecendo, afinal? Se você também está se fazendo essa pergunta, o livro de Mark Manson é sua próxima leitura obrigatória. Em A sutil arte de ligar o f*da-se, Manson, de maneira brilhante, deu forma à ansiedade que permeia a vida moderna - agora, em F*deu geral, ele desvia seu olhar das falhas inevitáveis de cada indivíduo para as inúmeras calamidades que tomam o mundo. Ao trazer desde pesquisas psicológicas até pérolas da sabedoria atemporal de filósofos como Platão e Nietzsche (e Tom Waits), Manson disseca religião e política e trata de como as duas, desconfortavelmente, vieram a se assemelhar. Também explora nossa relação com o dinheiro, o entretenimento e a internet, e desafia de modo franco nossas definições de fé, felicidade, liberdade e, até mesmo, a própria definição de esperança. Um passeio inusitado e divertido pela dor em nossos corações e o estresse em nossas vidas.
 
