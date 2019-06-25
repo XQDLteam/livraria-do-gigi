@@ -1,8 +1,11 @@
 from flask import Flask, render_template, request
 from flask_cors import CORS
 from models import *
+import os
 
 app = Flask(__name__)
+#app._static_folder=os.path.abspath("templates/css/login.css")
+#app._static_folder=os.path.abspath("templates/css/base.css")
 CORS(app)
 @app.route('/', methods=['GET', 'POST']) #/login or /anything
 def index():
@@ -18,7 +21,7 @@ def index():
         endereco = request.form.get('endereco')
         register(login, nome, email, senha, cpf, endereco)
         
-    return render_template('Livraria/login.html');
+    return render_template('login.html');
 
 if __name__ == '__main__':
     app.run(debug=True)
